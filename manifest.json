@@ -1,0 +1,21 @@
+{
+
+	"manifest_version": 2,
+	"name": "EasyPlanner",
+	"version": "0.1",
+  
+	"description": "Helps you fill out planning sites like LettuceMeet and Doodle based on your agenda.",
+  
+	"icons": {
+		"48": "icons/border-48.png"
+	},
+  
+	"content_scripts": [
+	  {
+		"matches": ["*://*.mozilla.org/*"],
+		"js": ["build.js"]
+	  }
+	]
+  
+  }
+  
